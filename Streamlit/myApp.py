@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # ---------------------------------------------
-weather = pd.read_csv('Data/weatherHistory.csv')
+weather = pd.read_csv('../Data/weatherHistory.csv')
 weather["Formatted Date"] = pd.to_datetime(weather["Formatted Date"],format="%Y-%m-%d %H:%M:%S", utc = True)
 
 #On enlève la column 'Loud Cover' pat manque de données
